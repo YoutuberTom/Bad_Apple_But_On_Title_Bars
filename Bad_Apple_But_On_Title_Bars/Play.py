@@ -38,10 +38,10 @@ for screen in range(video_height):
     screen = Window("", screen_size, win_pos)
     screen.set_icon(icon)
     screen_list.append(screen)
-#You may need to change as it depends on your screen height and width(the program needs 1275 width and 1011 height)
+#You may need to change as it depends on height and width of your screen(it needs about 1275 width and 1011 height)
 
 os.environ["SDL_VIDEO_WINDOW_POS"] = "80, 100"
-#Change this to set where the preview video would go
+#Change this to set the preview video position
 
 main_screen = pygame.display.set_mode((video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 pygame.display.set_caption("")
