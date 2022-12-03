@@ -5,6 +5,7 @@
 
 **Requirements:**
 - **Python** - Not tested yet but it shouldn't be too low
+- **Windows Os** - I don't think it'll look good with other Os title bar
 - **Hardware** - Don't run this project on too poor hardware, since you will experience a lot of lag
 
 **Requirements for the Python package:**
