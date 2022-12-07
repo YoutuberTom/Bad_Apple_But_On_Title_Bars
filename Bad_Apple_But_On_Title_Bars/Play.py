@@ -5,18 +5,19 @@ pygame.init()
 width, height = screen_size = (1275, 0)
 
 path = __file__[:-len(os.path.basename(__file__))]
-video_path = path + r"Data\Bad_Apple.mp4"
-audio_path = path + r"Data\Bad_Apple.mp3"
-icon = pygame.image.load(path + r"Data\Icon.png")
-#Some os need to change \ to / in the file path
+separator = os.sep
+video_path = path + fr"Data{separator}Bad_Apple.mp4"
+audio_path = path + fr"Data{separator}Bad_Apple.mp3"
+icon = pygame.image.load(path + fr"Data{separator}Icon.png")
 
 black = "\u2588\u2003"
 white = "   \u2003\u200a"
 video_width = 48
 video_height = 36
+
 distance_between_screens = 28
 screen_title_width = 30
-#You may need to change something as it depends on your os
+#You may need to change those two as it depends on your os and monitor
 
 try:
     pygame.mixer.music.load(audio_path)
