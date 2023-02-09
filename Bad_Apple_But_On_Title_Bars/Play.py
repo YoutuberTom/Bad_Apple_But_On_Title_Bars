@@ -39,7 +39,6 @@ for screen in range(video_height):
     screen = Window("", screen_size, win_pos)
     screen.set_icon(icon)
     screen_list.append(screen)
-#You may need to change as it depends on height and width of your screen(it needs about 1275 width and 1011 height)
 
 os.environ["SDL_VIDEO_WINDOW_POS"] = "80, 100"
 #Change this to set the preview video position
