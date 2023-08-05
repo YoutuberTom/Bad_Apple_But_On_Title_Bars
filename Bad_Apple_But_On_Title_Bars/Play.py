@@ -45,7 +45,7 @@ if __name__ == "__main__":
         screen.set_icon(icon)
         screens.append(screen)
 
-    main_screen = pygame.display.set_mode((video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+    main_screen = pygame.display.set_mode((int(video.get(cv2.CAP_PROP_FRAME_WIDTH)), int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))))
     pygame.display.set_caption("")
     pygame.display.set_icon(icon)
 
